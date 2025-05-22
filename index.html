@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Study Assistant</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Light theme scrollbar */
+    html:not(.dark) ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    html:not(.dark) ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 10px;
+    }
+    html:not(.dark) ::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 10px;
+    }
+    html:not(.dark) ::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+    html:not(.dark) {
+      scrollbar-width: thin;
+      scrollbar-color: #888 #f1f1f1;
+    }
+
+    /* Dark theme scrollbar */
+    html.dark ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    html.dark ::-webkit-scrollbar-track {
+      background: #1a202c; /* slate-800 */
+      border-radius: 10px;
+    }
+    html.dark ::-webkit-scrollbar-thumb {
+      background: #4a5568; /* slate-600 */
+      border-radius: 10px;
+    }
+    html.dark ::-webkit-scrollbar-thumb:hover {
+      background: #718096; /* slate-500 */
+    }
+    html.dark {
+      scrollbar-width: thin;
+      scrollbar-color: #4a5568 #1a202c;
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.0.1"
+  }
+}
+</script>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html><link rel="stylesheet" href="index.css">
+<script src="index.tsx" type="module"></script>
